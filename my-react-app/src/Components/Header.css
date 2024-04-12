@@ -8,10 +8,12 @@ header {
 
 .navbar {
     transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px black;
+    /* background: rgba(0,0,0,0.5); */
 }
 
 .navbar-scroll {
-    background-color: white !important;
+    background-color: rgb(68, 157, 209) !important;
 }
 .nav-link {
     font-size: 26px;
@@ -26,6 +28,7 @@ header {
 .nav-item{
     font-size: 26px;
     font-weight: 600;
+
 }
 /* a.navabr-brand.main-head{
     font-size: 31px;
@@ -41,26 +44,29 @@ header {
 .sub-head{
     color: black;
     font-size: 12px;
-    margin-left: 5px;
+    margin-left: -44px;
     font-weight: 600;
     margin-top: -9px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     header {
       width: 100%;
-      height: 33em;
+      height: 36em;
       min-height: 400px;
       background-size: cover;
       background-image: url(https://photostock.skssf.in/preview/111784.jpg);
     }
+    .nvr{
+        margin-left: 21em;
+    }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 765px) {
     header {
       width: 100%;
       height: 7em;
       min-height: 289px;
       background-size: cover;
-      background-image: url(https://photostock.skssf.in/preview/111784.jpg);
+      background-image: url(https://photostock.skssf.in/preview/111624.jpg);
     }
   }
   

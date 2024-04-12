@@ -1,0 +1,48 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* vertically center the content */
+    height: 609px;
+    width: 800px;
+    margin: 0 auto; /* horizontally center the div */
+    border-radius: 39px;
+    box-shadow: 0 0 13px rgb(68, 157, 209);
+}
+
+.subject{
+    text-align: center;
+}
+.sample-poster{
+    height: 541px;
+    width: 746px;
+    box-shadow: 0 0 13px rgb(68, 157, 209); 
+}
+@media only screen and (max-width:767px){
+.sample-poster{
+    width: 367px;
+    height: 316px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 405px;
+    width: 394px;
+    margin: 0 auto;
+    border-radius: 39px;
+    box-shadow: 0 0 13px rgb(68, 157, 209);
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .center{
+       
+        width: 768px;
+        
+    }
+    .sample-poster{
+        width: 696px;
+    }
+    }
+  
+  
