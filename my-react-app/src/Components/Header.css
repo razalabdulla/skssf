@@ -1,0 +1,67 @@
+header {
+    width: 100%;
+    height: 61em;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url('https://photostock.skssf.in/preview/111784.jpg');
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-scroll {
+    background-color: white !important;
+}
+.nav-link {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 1024px) {
+    .nvr {
+        margin-left: 58em;
+    }
+}
+.nav-item{
+    font-size: 26px;
+    font-weight: 600;
+}
+/* a.navabr-brand.main-head{
+    font-size: 31px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 38px;
+    display: flex;
+    flex-direction: column;
+} */
+.sub-head{
+    color: black;
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 600;
+    margin-top: -9px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+      width: 100%;
+      height: 33em;
+      min-height: 400px;
+      background-size: cover;
+      background-image: url(https://photostock.skssf.in/preview/111784.jpg);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    header {
+      width: 100%;
+      height: 7em;
+      min-height: 289px;
+      background-size: cover;
+      background-image: url(https://photostock.skssf.in/preview/111784.jpg);
+    }
+  }
+  
+  
