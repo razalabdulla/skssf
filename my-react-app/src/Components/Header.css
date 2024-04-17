@@ -9,15 +9,18 @@ header {
 .navbar {
     transition: background-color 0.3s ease;
     box-shadow: 0 0 10px black;
-    /* background: rgba(0,0,0,0.5); */
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-scroll {
     background-color: rgb(68, 157, 209) !important;
 }
+
 .nav-link {
     font-size: 26px;
     font-weight: 400;
+    color: white !important;
+    /* Added !important to override other styles */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -25,11 +28,13 @@ header {
         margin-left: 58em;
     }
 }
-.nav-item{
+
+.nav-item {
     font-size: 26px;
     font-weight: 600;
 
 }
+
 /* a.navabr-brand.main-head{
     font-size: 31px;
     color: black;
@@ -41,33 +46,50 @@ header {
     display: flex;
     flex-direction: column;
 } */
-.sub-head{
-    color: black;
+.sub-head {
+    color: rgb(255, 255, 255);
     font-size: 12px;
-    margin-left: -44px;
+    margin-left: 3px;
     font-weight: 600;
     margin-top: -9px;
+    text-decoration: none;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     header {
-      width: 100%;
-      height: 36em;
-      min-height: 400px;
-      background-size: cover;
-      background-image: url(https://photostock.skssf.in/preview/111784.jpg);
+        width: 100%;
+        height: 36em;
+        min-height: 400px;
+        background-size: cover;
+        background-image: url(https://photostock.skssf.in/preview/111784.jpg);
     }
-    .nvr{
-        margin-left: 21em;
+
+    .nvr {
+        margin-left: 18em;
     }
-  }
-  @media only screen and (max-width: 765px) {
+}
+
+@media only screen and (max-width: 765px) {
     header {
-      width: 100%;
-      height: 7em;
-      min-height: 289px;
-      background-size: cover;
-      background-image: url(https://photostock.skssf.in/preview/111624.jpg);
+        width: 100%;
+        height: 7em;
+        min-height: 289px;
+        background-size: cover;
+        background-image: url(https://photostock.skssf.in/preview/111624.jpg);
     }
-  }
-  
-  
+}
+
+@media only screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 2) {
+
+    /* iPhone SE */
+    header {
+        width: 105%;
+    }
+
+    .another-image {
+        top: 80%;
+        left: 77%;
+
+    }
+
+}

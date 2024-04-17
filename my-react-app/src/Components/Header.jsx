@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 function Header() {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     const [menuOpen, setMenuOpen] = useState(false); // State to manage the open/close state of the navbar
 
     // Function to toggle the navbar
@@ -13,17 +18,17 @@ function Header() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 0) {
                 navbar.classList.add('navbar-scroll');
-                // Change color of all <a> tags to black
+                // Change color of all <a> tags to white
                 const aTags = document.querySelectorAll('.navbar a');
                 aTags.forEach(aTag => {
-                    aTag.style.color = 'black';
+                    aTag.style.color = 'white';
                 });
             } else {
                 navbar.classList.remove('navbar-scroll');
                 // Reset color of all <a> tags
                 const aTags = document.querySelectorAll('.navbar a');
                 aTags.forEach(aTag => {
-                    aTag.style.color = ''; // Reset to default
+                    aTag.style.color = 'white'; // Reset to default
                 });
             }
         });
@@ -39,19 +44,24 @@ function Header() {
             <header></header>
             <nav className="navbar navbar-expand-sm fixed-top navbar-light">
                 <div className="container">
-                    <a className="navbar-brand main-head" href="#" style={{ fontSize: '42px', color: 'black', display: 'flex',fontWeight:'500',marginTop:'9px', flexDirection: 'column' ,fontFamily:'inherit'}}>
-                        SKSSF <span className="sub-head" >pilavalapp unit</span>
+                    <a className="navbar-brand main-head" href="#" style={{ fontSize: '42px', color: 'white', display: 'flex', fontWeight: '500', marginTop: '9px', flexDirection: 'column', fontFamily: 'inherit' }}>
+                        SKSSF <span 
+                            
+                            className="sub-head" >പിലാവളപ്പ് യൂണിറ്റ്</span>
                     </a>
                     <button className="navbar-toggler" type="button" onClick={toggleNavbar} aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2m18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2m0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" color='white' width="3em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2m18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2m0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2"></path></svg>
                     </button>
                     <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbar1">
                         <ul className="navbar-nav nvr">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">Poster</a>
+                                <a className="nav-link" href="/">Home</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#Banner">Poster</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <a className="nav-link" href="#form">Make</a>
                             </li>
                         </ul>
                     </div>

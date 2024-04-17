@@ -10,7 +10,9 @@ import {
 
 function Forms() {
   return (
-    <div>
+    <div id='form'>
+        <br />
+        <br />
         <br />
         <br />
       <h3 className='subject'>Wanna Make Your Poster?</h3>
@@ -18,9 +20,9 @@ function Forms() {
       
       <div className="container d-flex justify-content-center align-items-center" style={{ height: "100vh",marginTop:'-18em' }}>
   <form className='inp'>
-    <MDBInput className='mb-4' type='text' id='form1Example1' label='Name' />
+    <MDBInput required className='mb-4' type='text' id='form1Example1' label='Name' />
     <label htmlFor="">Image</label>
-    <MDBInput className='mb-4' type='file' id='form1Example2'  />
+    <MDBInput required className='mb-4' type='file' id='form1Example2'  />
 
     <MDBRow className='mb-4'>
       <MDBCol className='d-flex justify-content-center'>
@@ -31,7 +33,7 @@ function Forms() {
       </MDBCol> */}
     </MDBRow>
 
-    <a className='btn bt' style={{color:' white ',background:' rgb(68, 157, 209) ',float:'right'}} href='/ready' block>
+    <a className='btn bt' style={{color:' white ',background:' rgb(68, 157, 209) ',float:'right'}} href='/ready' type='submit' block>
       Make
     </a>
   </form>

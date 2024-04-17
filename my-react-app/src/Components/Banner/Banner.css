@@ -1,48 +1,147 @@
 .center {
     display: flex;
     justify-content: center;
-    align-items: center; /* vertically center the content */
+    align-items: center;
+    /* vertically center the content */
     height: 609px;
     width: 800px;
-    margin: 0 auto; /* horizontally center the div */
+    margin: 0 auto;
+    /* horizontally center the div */
     border-radius: 39px;
     box-shadow: 0 0 13px rgb(68, 157, 209);
 }
 
-.subject{
+.subject {
     text-align: center;
+
+
 }
-.sample-poster{
+
+.sample-poster {
     height: 541px;
     width: 746px;
-    box-shadow: 0 0 13px rgb(68, 157, 209); 
-}
-@media only screen and (max-width:767px){
-.sample-poster{
-    width: 367px;
-    height: 316px;
-}
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 405px;
-    width: 394px;
-    margin: 0 auto;
-    border-radius: 39px;
     box-shadow: 0 0 13px rgb(68, 157, 209);
 }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    
-    .center{
-       
-        width: 768px;
-        
+
+@media only screen and (max-width:767px) {
+    .sample-poster {
+        width: 367px;
+        height: 316px;
     }
-    .sample-poster{
+
+    /* .another-image {
+        width: 117px;
+        top: 152%;
+        left: 64%;
+    } */
+    .another-image {
+        width: 7em !important;
+        margin-top: 0em !important;
+        margin-left: 20em !important;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 405px;
+        width: 394px;
+        margin: 0 auto;
+        border-radius: 39px;
+        box-shadow: 0 0 13px rgb(68, 157, 209);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .center {
+
+        width: 742px;
+
+    }
+
+    .sample-poster {
         width: 696px;
     }
+}
+
+.another-image {
+    position: absolute;
+    margin-left: 39em;
+    transform: translate(-50%, -50%);
+    border-radius: 124px;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .another-image {
+        margin-left: 1em !important;
     }
-  
+}
+
+
+.name-div {
+    width: 3em;
+    height: 1em;
+    background-color: black;
+}
+
+.name-div {
+    position: absolute;
+    bottom: 0;
+    /* Adjust as needed */
+    left: 0;
+    /* Adjust as needed */
+    width: 100%;
+    /* Ensures the div stretches across the whole width of its container */
+    height: 1em;
+    background-color: rgb(255, 255, 255);
+    margin-left: 501px;
+    /* top: 17em; */
+    width: 9em;
+    height: 3em;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+
+.sample-poster {
+    position: relative;
+    display: inline-block;
+    /* Ensures the div only takes as much space as necessary */
+}
+
+@media (max-width: 767px) {
+
+    /* Adjust breakpoint as needed for mobile screens */
+    .name-div {
+        left: -17em;
+        width: 7em;
+        height: 2em;
+        top: 10em;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Tablet screens */
+    .name-div {
+        left: -21px;
+        width: 9em;
+        height: 2em;
+        top: 17em;
+        /* Adjust top positioning */
+    }
+}
+
+.name {
+    text-align: center;
+}
+@media screen and (min-width: 1024px) {
+    /* Adjust the top property for computer screens */
+    .name-div {
+      top: 17em;
+    }
+  }
   
