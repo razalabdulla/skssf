@@ -22,7 +22,11 @@ header {
     color: white !important;
     /* Added !important to override other styles */
 }
+.nav-link:hover{
+    color: rgb(187, 183, 183) !important;
 
+
+}
 @media only screen and (min-width: 1024px) {
     .nvr {
         margin-left: 58em;
@@ -93,3 +97,5 @@ header {
     }
 
 }
+
+

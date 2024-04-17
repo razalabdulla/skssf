@@ -44,10 +44,10 @@ function Header() {
            
             <nav className="navbar navbar-expand-sm fixed-top navbar-light">
                 <div className="container">
-                    <a className="navbar-brand main-head" href="#" style={{ fontSize: '42px', color: 'white', display: 'flex', fontWeight: '500', marginTop: '9px', flexDirection: 'column', fontFamily: 'inherit' }}>
+                    <a className="navbar-brand main-head"  data-aos="zoom-in"data-aos-duration="2000" href="#" style={{ fontSize: '42px', color: 'white', display: 'flex', fontWeight: '500', marginTop: '9px', flexDirection: 'column', fontFamily: 'inherit' }}>
                         SKSSF <span 
                             
-                            className="sub-head" >പിലാവളപ്പ് യൂണിറ്റ്</span>
+                            className="sub-head" data-aos="zoom-in-up"data-aos-duration="2500" >പിലാവളപ്പ് യൂണിറ്റ്</span>
                     </a>
                     <button className="navbar-toggler" type="button" onClick={toggleNavbar} aria-label="Toggle navigation">
                         <svg xmlns="http://www.w3.org/2000/svg" color='white' width="3em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2m18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2m0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2"></path></svg>

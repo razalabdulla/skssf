@@ -31,17 +31,17 @@ function Footer() {
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
+              <h6  data-aos="fade-in"data-aos-duration="2500"  className='text-uppercase fw-bold mb-4'>
+                <MDBIcon icon="gem" className="me-3" data-aos="fade-in"data-aos-duration="2500" />
                 Logic leap
               </h6>
-              <p>
+              <p  data-aos="fade-in"data-aos-duration="2500">
               Logic Leap: Your Partner in Digital Innovation. Trusted by businesses worldwide for our expertise in web and app development, graphic design, SEO optimization, and more. Let's propel your digital presence forward together.
               </p>
             </MDBCol>
 
-            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'> 
+              <h6  className='text-uppercase fw-bold mb-4' data-aos="fade-in"data-aos-duration="2500">Products</h6>
               <p>
                
               </p>
@@ -63,7 +63,7 @@ function Footer() {
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+              <h6 className='text-uppercase fw-bold mb-4'  data-aos="fade-in"data-aos-duration="2500">Useful links</h6>
               <p>
                 <a href='#!' className='text-reset'>
                   Pricing
@@ -87,7 +87,7 @@ function Footer() {
             </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+              <h6 className='text-uppercase fw-bold mb-4' data-aos="fade-in"data-aos-duration="2500" >Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
                 Enywhere at any time:)
