@@ -41,7 +41,7 @@ function Header() {
 
     return (
         <>
-            <header></header>
+           
             <nav className="navbar navbar-expand-sm fixed-top navbar-light">
                 <div className="container">
                     <a className="navbar-brand main-head" href="#" style={{ fontSize: '42px', color: 'white', display: 'flex', fontWeight: '500', marginTop: '9px', flexDirection: 'column', fontFamily: 'inherit' }}>

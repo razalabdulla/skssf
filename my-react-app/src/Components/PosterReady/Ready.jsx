@@ -1,15 +1,9 @@
 import React from 'react'
-import './Banner.css'
 
-
-function Banner() {
+function Ready() {
   return (
-    <div id='Banner'>
-      <br />
-      <br />
-      <h4 className='subject'>Subject</h4>
-      <br />
-      <div className="center">
+    <div style={{marginTop:'14em'}}>
+           <div className="center">
   <div className="sample-poster">
     <img className='sample-poster' src='https://photostock.skssf.in/preview/111622.jpg' alt="" />
     <div className="name-div">
@@ -22,4 +16,5 @@ function Banner() {
     </div>
   )
 }
-export default Banner
+
+export default Ready
